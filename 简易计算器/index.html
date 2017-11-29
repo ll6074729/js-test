@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简易计算器</title>
+</head>
+<style>
+    .box {
+        width: 200px;
+        border: 1px solid #e4de4e;
+        margin: 100px auto;
+        text-align: center
+    }
+
+    input,
+    select {
+        width: 90%;
+        margin: 20px 0;
+        height: 30px;
+    }
+
+    input:last-child {
+        border: 0;
+        text-align: center
+    }
+</style>
+
+<body>
+    <div class="box">
+        <p>简易计算器</p>
+        <input type="text" id="num-one" index="1">
+        <select name="computer" id="computer">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="num-two" index="2">
+        <button id="btn">计算</button>
+        <p id="result"></p>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+</html>
